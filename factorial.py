@@ -1,4 +1,3 @@
-#Assignment 1 - Factorial
 def factorial():
     number = int(input("Enter a number: "))
     factorial = 1
