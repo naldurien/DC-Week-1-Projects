@@ -18,6 +18,7 @@ def prompt_menu():
 
 def view_tasks():
     global task_list
+    print("\n******* TASK LIST *******")
     for task in task_list:
         index = task_list.index(task)
         print(str(index+1) + " - " + task.get("Title") + " - " + task.get("Priority"))
@@ -31,7 +32,6 @@ def add_task():
     new_task[title] = title_val
     new_task[priority] = priority_val
     task_list.append(new_task)
-    print("\nCurrent To-Do List:")
     view_tasks()
 
 
